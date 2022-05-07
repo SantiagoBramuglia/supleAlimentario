@@ -1,0 +1,44 @@
+<scroll-container>
+<div class = "container p-4 " >
+    <div class="row">
+      <div class="mx-auto">
+        <form action="/update/Nombre" method="post"  > 
+        <div class="form-group">
+            <label> {{resultadosNombre.Comedor}} </label>
+            
+             <br/>
+            <label > {{resultadosNombre.Nombre}} </label>
+            <label > {{resultadosNombre.FechaNacimiento}} </label>
+             <br/>
+            
+          <div class="col-sm-5" align="center" class="contenedor">
+
+            
+            <br/>
+            
+            <label for="Datos" class="col-sm-5 col-form-label" align="center"> Datos del niñe </label>
+            <input class="form-control" placeholder="Edad"    type="number" id="edad"  name="edad"   min= "0"/>
+            <br/>    
+            
+            
+            <input class="form-control" placeholder="Cintura" type="number" id="Cintura" name="Cintura"  min= "0" />
+            <input class="form-control" placeholder="Altura"    type="number" id="altura"  name="altura"   min= "0"  />
+            <input class="form-control" placeholder="Peso" type="number" id="peso" name="peso"  min= "0"  />
+            
+            
+            <br/>    
+            <input class="form-control" placeholder="Cantidad de Yougurt"    type="number" id="CantYougurt"  name="CantYougurt"  min= "0" />
+           <br/>  
+          </div>
+        </div> 
+      <button class="btn btn-success btn-block">
+          Guardar
+      </button>   
+      <a href="/MenuPpal" class="btn btn-secondary">Volver</a>           
+     </form>
+     <footer class="footer">
+     </footer>
+    </div>
+  </div>
+</div>
+</scroll-container> 

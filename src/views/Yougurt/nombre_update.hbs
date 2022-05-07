@@ -1,0 +1,19 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each resultados}}
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2>Niñes: </h2>
+                        <h3 class="card-title text-uppercase">
+                            {{Nombre}}
+                        </h3>
+                        <a href="/Update/Nombre/{{Nombre}}" class="btn btn-secondary">Mostrar Resultados</a> 
+                        
+                    </div>
+                </div>
+            </div> 
+        {{/each}}
+        <a href="/MenuPpal" class="btn btn-secondary">Volver</a> 
+    </div>    
+</div>
