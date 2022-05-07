@@ -12,7 +12,7 @@ router.get('/',isLoggedIn ,async (req,res)=>{
     res.render('Yougurt/Nombre', {resultados})
 })
 
-router.get('/Nombre/:Nombre',isLoggedIn ,async (req,res)=>{
+router.put('/Nombre/:Nombre',isLoggedIn ,async (req,res)=>{
 
     const Nombre = await pool.query('SELECT * FROM resultados WHERE Nombre = ?',[req.params.Nombre])
 

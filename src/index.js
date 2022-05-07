@@ -57,8 +57,8 @@ app.use('/Ingreso', require('./routes/Yougurt'))
 app.use('/Resultados', require('./routes/resultados'))
 app.use('/MenuPpal', require('./routes/MenuPpal'))
 
+app.use('/resultado', require('./routes/Nombres'))
 app.use('/Update', require('./routes/Nombres'))
-//app.use('/Update', require('./routes/update'))
 
 app.use(require('./routes/authentication'))
 

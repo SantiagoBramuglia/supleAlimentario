@@ -26,7 +26,7 @@ router.get('/Nombre/:Nombre',isLoggedIn,async (req,res)=>{
     
       }
     const Nombre = await pool.query('SELECT * FROM resultados WHERE Nombre = ?',[req.params.Nombre])
-    res.render('Yougurt/update', {resultadosNombre: Nombre[0]})
+    res.render('Yougurt/NombresPersonal', {resultadosNombre: Nombre[0]})
 })
 
 router.get('/Nombre/:Nombre',isLoggedIn,async (req,res)=>{
